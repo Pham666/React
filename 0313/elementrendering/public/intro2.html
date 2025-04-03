@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    // body 요소 가져오기
+    const body = document.body;
+
+    // h1 생성
+    const h1 = document.createElement("h1");
+    h1.textContent = "자기소개 페이지";
+    body.appendChild(h1);
+
+    // h2 정보 배열
+    const infoList = [
+        { label: "이름", value: "임동혁" },
+        { label: "나이", value: "25" },
+        { label: "학과", value: "소프트웨어학과" }
+    ];
+
+    // h2 요소 생성 및 추가
+    infoList.forEach(info => {
+        const h2 = document.createElement("h2");
+        h2.textContent = `${info.label} : ${info.value}`;
+        body.appendChild(h2);
+    });
+});
+
+    </script>
+</body>
+</html>

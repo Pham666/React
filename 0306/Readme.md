@@ -1,14 +1,14 @@
 # 웹 프로그래밍 학습 기록
 
-## 📚 1주차 학습 내용 (2024.03.04)
+## 1주차 학습 내용 (2024.03.04)
 
-### 🌐 HTML (HyperText Markup Language)
+### HTML (HyperText Markup Language)
 웹 페이지의 **구조와 내용**을 정의하는 마크업 언어입니다.
 - 태그(Tag)를 사용하여 요소들을 구조화
 - 웹 브라우저가 해석하여 사용자에게 표시
 - 시맨틱 태그를 활용한 의미있는 구조 작성이 중요
 
-### 🎨 CSS (Cascading Style Sheets)
+### CSS (Cascading Style Sheets)
 HTML로 구성된 웹 페이지에 **디자인과 레이아웃**을 적용하는 언어입니다.
 - 색상, 글꼴, 간격, 위치 등 시각적 스타일 정의
 - 반응형 웹 디자인 구현 가능
@@ -16,18 +16,18 @@ HTML로 구성된 웹 페이지에 **디자인과 레이아웃**을 적용하는
 
 ---
 
-## 🔄 웹 애플리케이션 구조: MPA vs SPA
+## 웹 애플리케이션 구조: MPA vs SPA
 
 ### MPA (Multi-Page Application)
 **여러 개의 HTML 페이지로 구성된 전통적인 방식**
 
-**✅ 장점**
+**장점**
 - SEO에 최적화 (검색엔진 크롤링 용이)
 - 초기 로딩 속도가 빠름
 - 서버 사이드 렌더링으로 보안성 높음
 - 페이지별 독립적인 관리 가능
 
-**❌ 단점**
+**단점**
 - **페이지 이동 시 전체 새로고침** 발생
 - 많은 서버 요청으로 인한 성능 저하
 - 사용자 경험(UX)이 상대적으로 부족
@@ -35,20 +35,20 @@ HTML로 구성된 웹 페이지에 **디자인과 레이아웃**을 적용하는
 ### SPA (Single-Page Application)
 **하나의 HTML 페이지에서 동적으로 콘텐츠를 변경하는 방식**
 
-**✅ 장점**
+**장점**
 - **빠른 페이지 전환** (새로고침 없음)
 - 부드럽고 자연스러운 사용자 경험
 - 서버 부하 감소, REST API 활용 용이
 - 앱과 유사한 사용감 제공
 
-**❌ 단점**
+**단점**
 - SEO 최적화의 어려움 (SSR 필요)
 - 초기 로딩 시간이 길 수 있음 (큰 번들 사이즈)
 - 클라이언트 측 보안 이슈 고려 필요
 
 ---
 
-## 🛠️ 개발 환경 설정
+## 개발 환경 설정
 
 ### Node.js
 - **JavaScript 런타임 환경**
@@ -67,9 +67,9 @@ HTML로 구성된 웹 페이지에 **디자인과 레이아웃**을 적용하는
 
 ---
 
-## ⚛️ React 개발 환경
+## React 개발 환경
 
-### 📦 패키지 관리 도구 비교
+### 패키지 관리 도구 비교
 
 | 구분 | npm (Node Package Manager) | npx (Node Package eXecute) |
 |------|----------------------------|----------------------------|
@@ -79,9 +79,9 @@ HTML로 구성된 웹 페이지에 **디자인과 레이아웃**을 적용하는
 | **사용 예시** | `npm install react` | `npx create-react-app` |
 | **전역 설치** | 필요시 `-g` 옵션 사용 | 불필요 (자동 다운로드) |
 
-### 🚀 React 프로젝트 생성 방법
+### React 프로젝트 생성 방법
 
-#### 1️⃣ CRA (Create React App) - ⚠️ 현재 비추천
+#### CRA (Create React App) - 현재 비추천
 ```bash
 npx create-react-app my-app
 ```
@@ -89,27 +89,27 @@ npx create-react-app my-app
 - 무겁고 빌드 속도가 느림
 - 커스터마이징의 한계
 
-#### 2️⃣ Vite - ✅ **현재 추천**
+#### Vite - **현재 추천**
 ```bash
 npm create vite@latest my-app
 ```
 
 **Vite의 장점**
-- ⚡ **매우 빠른 개발 서버 및 빌드 속도**
-- 🔧 다양한 프레임워크 지원 (React, Vue, Svelte 등)
-- 📦 TypeScript, ESLint 기본 설정 지원
-- 🎯 현대적인 번들링 도구 사용
+- **매우 빠른 개발 서버 및 빌드 속도**
+- 다양한 프레임워크 지원 (React, Vue, Svelte 등)
+- TypeScript, ESLint 기본 설정 지원
+- 현대적인 번들링 도구 사용
 
 ---
 
-## 📝 JSX (JavaScript XML)
+## JSX (JavaScript XML)
 
 ### JSX란?
 **JavaScript와 HTML을 결합한 React의 문법 확장**
 - HTML과 유사한 문법으로 컴포넌트 작성
 - Babel을 통해 일반 JavaScript로 변환됨
 
-### 🎯 JSX의 주요 장점
+### JSX의 주요 장점
 
 1. **직관적이고 읽기 쉬운 코드**
    - HTML과 유사한 문법으로 학습 용이
@@ -138,7 +138,7 @@ npm create vite@latest my-app
 
 ---
 
-## 🎯 이번 주 핵심 포인트
+## 이번 주 핵심 포인트
 
 1. **웹 개발의 기본 구조** (HTML, CSS) 이해
 2. **MPA vs SPA**의 차이점과 각각의 장단점 파악  
@@ -148,7 +148,7 @@ npm create vite@latest my-app
 
 ---
 
-## 📌 다음 주 학습 계획
+## 다음 주 학습 계획
 - React 컴포넌트 구조와 props
 - 상태 관리 (useState Hook)
 - 이벤트 핸들링
